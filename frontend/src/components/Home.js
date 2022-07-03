@@ -21,7 +21,7 @@ const UserHome = () => {
             }
         }
         
-        fetch('http://backend:5000/restaurant/recipes', options)
+        fetch('http://localhost:5000/restaurant/recipes', options)
         .then(response => response.json())
         .then(response => {setData(response); console.log(response)})
         .catch(err => console.error(err));

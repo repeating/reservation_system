@@ -25,7 +25,7 @@ const CreateReservationModal = (props) => {
 
         }
 
-        fetch('http://backend:5000/restaurant/reservations', requestOptions)
+        fetch('http://localhost:5000/restaurant/reservations', requestOptions)
             .then(res => res.json())
             .then(data => {
                 reset()

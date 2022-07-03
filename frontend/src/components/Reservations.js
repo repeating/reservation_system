@@ -27,7 +27,7 @@ const Reservations  = () => {
             }
         }
         
-        fetch('http://backend:5000/restaurant/reservations', options)
+        fetch('http://localhost:5000/restaurant/reservations', options)
         .then(response => response.json())
         .then(response => {setData(response); console.log(response)})
         .catch(err => console.error(err));

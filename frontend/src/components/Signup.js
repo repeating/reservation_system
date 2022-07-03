@@ -32,7 +32,7 @@ const SignupPage = () => {
             }
 
 
-            fetch('http://backend:5000/auth/signup', requestOptions)
+            fetch('http://localhost:5000/auth/signup', requestOptions)
                 .then(res => res.json())
                 .then(data =>{
                     console.log(data)

@@ -25,7 +25,7 @@ const LoginPage=()=>{
            body:JSON.stringify(data)
        }
         
-       fetch('http://backend:5000/auth/login',requestOptions)
+       fetch('http://localhost:5000/auth/login',requestOptions)
        .then(res=>res.json())
        .then(response=>{
            console.log(response)

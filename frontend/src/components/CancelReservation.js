@@ -19,7 +19,7 @@ const CancelReservationModal = (props) => {
             },
         }
 
-        fetch('http://backend:5000/restaurant/reservations/'+props.id, requestOptions)
+        fetch('http://localhost:5000/restaurant/reservations/'+props.id, requestOptions)
             .then(res => res.json())
             .then(data => {
                 
